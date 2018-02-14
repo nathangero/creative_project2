@@ -14,14 +14,17 @@ $(document).ready(function() { // Don't run until the webpage is fully loaded
         }
 
         var myurl = "http://www.recipepuppy.com/api/?" + query;
-        console.log(myurl);
+        // console.log(myurl);
+
         $.ajax({
-            url : myurl,
-            dataType : "json",
-            success : function(json){
-                console.log(json);
+            url: myurl,
+            dataType: "jsonp", // jsonp goes around the CORS issue
+            jsonpCallback: "logResults", // Prevents the '?callback' string from being appended to the url
+            success: function(json) { 
+                console.log(json) 
+                
             }
-        })
+        });
     });
 
 });
