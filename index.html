@@ -3,24 +3,29 @@
     <head>
         <title>project 2</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script text="type/javascript" src="scripts.js"></script>
         <meta charset="utf-8"/>
     </head>
 
     <body>
+        <div id="topbanner">
+            <h1>Need a recipe for your ingredients?</h1>
+            <h2>Enter your ingredients separated by commas then click Search!</h2>
+        </div>
+        <!-- <h3>e.g. garlic,chicken,tomato</h3> -->
         
         <input id="ingredients">
-        <input type="button" value="Start!" id="start">
+        <input type="button" value="Search!" id="start">
 
-        <div id="recipeResults">
+        <div id="recipeResults"></div>
 
-        </div>
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script text="type/javascript" src="scripts.js"></script>
-
-        <footer>
-            <a id="github" target="_blank" href="https://github.com/nathangero/creative_project2">Github Repo</a>
+        <footer id="relativeFooter">
+            <a id="footerlink" target="_blank" href="https://github.com/nathangero/creative_project2">Github Repo</a>
+            <br/>
+            <p id="poweredby">Powered by:
+                <a id="footerlink" target="_blank" href="http://www.recipepuppy.com"> Recipe Puppy</a>
+            </p>
         </footer>
     </body>
 </html>

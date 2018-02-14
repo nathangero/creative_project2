@@ -1,3 +1,51 @@
+html {
+    width: 100%;
+}
+
+body {
+    font-family: Verdana;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#topbanner {
+    position: absolute;
+    background-color: forestgreen;
+    width: 100%;
+    clear: both;
+    left: 0px;
+    top: 0px;
+    margin-top: -10px;
+}
+
+input {
+    display: inline-block;
+    margin-top: 120px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#recipeResults {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+#poweredby {
+    color: crimson;
+    font-size: 12px;
+}
+
+#footerlink {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
 footer {
     /* Puts the footer bar at the bottom of the page*/
     position: fixed;
@@ -7,7 +55,8 @@ footer {
     width: 100%;
 
     background-color: #f1f1f1;
-    padding: 15px;
+    padding: 10px;
+    padding-bottom: 0;
     text-align: center;
     color: rgba(255, 255, 255, 0.911)!important;
     /* text-decoration: underline; */
