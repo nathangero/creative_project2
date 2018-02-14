@@ -47,6 +47,7 @@ input[type=button] {
     padding: 8px 16px;
     border-radius: 3px;
     font-size: 13px;
+    background-color: white;
 }
 
 #recipeResults {
