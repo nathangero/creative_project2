@@ -1,6 +1,8 @@
 html {
     width: 100%;
-    background-color: #ff3c00;
+    /* background-color: #ff3c00; */
+    background-image: url(https://goo.gl/3DKz2q);
+    background-repeat: repeat-y repeat-x;
 }
 
 body {
@@ -10,22 +12,20 @@ body {
 h1, h2 {
     text-align: center;
     margin: 20px;
+    color: white;
 }
 
 #topbanner {
     position: absolute;
     /* background-color: rgb(0, 231, 0); */
-    background-color: #ff9100;
+    background-color: navy;
     width: 100%;
     clear: both;
     left: 0px;
+    right: 0px;
     top: 0px;
     margin-top: -10px;
 }
-
-/* section {
-    background-color: #ff9100;
-} */
 
 .wrapper {
     text-align: center;
@@ -35,7 +35,7 @@ input[type=text] {
     display: inline-block;
     position: relative;
     padding: 8px 0;
-    margin: 10% auto 0 auto;
+    margin: 10% auto 50px auto;
     text-indent: 5px;
     width: 30%;
     border-radius: 3px;
@@ -43,21 +43,29 @@ input[type=text] {
 
 input[type=button] {
     display: inline-block;
+    position: relative;
     width: 10;
     padding: 8px 16px;
     border-radius: 3px;
     font-size: 13px;
     background-color: white;
+    border: none;;
 }
 
 #recipeResults {
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
+    margin-left: 15em;
+}
+
+li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #poweredby {
@@ -70,20 +78,20 @@ a {
     color: cornflowerblue;
 }
 
-footer {
+.footer {
     /* Puts the footer bar at the bottom of the page*/
     position: fixed;
     bottom: 0px;
-    left: 0px;
-    right: 0px;
-    clear: both;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     width: 100%;
 
-    background-color: #f1f1f1;
+    background-color: #333333;
     padding: 10px;
     padding-bottom: 0;
     text-align: center;
     color: rgba(255, 255, 255, 0.911)!important;
-    /* text-decoration: underline; */
     font-family: Verdana;
 }

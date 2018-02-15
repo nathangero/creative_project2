@@ -34,15 +34,18 @@ $(document).ready(function() { // Don't run until the webpage is fully loaded
             jsonpCallback: "logResults", // Prevents the '?callback' string from being appended to the url
             success: function(json) { 
                 console.log(json) 
-                var results = '';
+                
+                var results = ''//"<div >\n\t";
                 for (var i = 0; i < json.results.length; i++) {
-                    results += '<img src="' + json.results[i].thumbnail + '">';
-                    results += '<li>\n<a href=' + json.results[i].href + ' target="_blank">' + json.results[i].title + '</a>\n<br><br>';
+                    results += '<li>\n\t<a href=' + json.results[i].href + ' target="_blank"><img src="' + json.results[i].thumbnail + '"></a>\t';
+                    results += '<a href=' + json.results[i].href + ' target="_blank">' + json.results[i].title + '</a>\n<br><br>';
                 }
-                $("#recipeResults").html(results);
+                // results += "</div>"
 
+                $("#recipeResults").html(results);
                 if (json.results.length != 0) {
-                    $("#relativeFooter").css('position', 'relative'); // Makes the footer become relative after successful search
+                    $(".footer").css('position', 'relative'); // Makes the footer become relative after successful search
+                    // $("#list").css('text-align', 'center');
                 }
             }
         });
